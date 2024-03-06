@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+canvas {
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+
+.poem h2 {
+	font-size: 16px;
+	color:white;
+}
+
+.poem {
+	scroll-snap-align: center;
+
+	width: 100vw;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	height: 100vh;
+	/* border: 2px solid red; */
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.poem.left {
+	justify-content: start;
+}
+
+.poem.right {
+	justify-content: end;
+}
+.poem.center{
+	justify-content: center; 
+}
+.poem_container {
+	text-align: start;
+	max-width: 500px;
+	/* border: 2px solid blue; */
+	margin-left: 7%;
+}
+
+.poem.right > .poem_container {
+	text-align: end;
+}
+
+.poem p {
+	color:white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size:25px;
+}
+
+.container {
+	/* Make this a vertical scroll container */
+	overflow-y: scroll;
+	/* Required height to enable scrolling, 100vh for full viewport height */
+	height: 100vh;
+	/* Enable scroll snapping */
+	scroll-snap-type: y mandatory;
+}
+#explore {
+    background-color: #394b7e;
+    color: #e9ddbb;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Calistoga', cursive;
+    font-family: 'Kenia', cursive;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Skranji', cursive;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 50px;
+	/* top: 80%;
+    left: 90%;
+    transform: translate(90%, -10%); */
+	margin-left: 40%;
+	
+   
+}
+
+#explore:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
+}
+
+#intro {
+   
+    color: #e9ddbb;
+    text-align: center;
+    font-size: 80px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 50px;
+	margin-left: 10%;
+	
+
+  
+}
+.mbti{
+	font-size: 90px;
+	color:#f1ea9c
+}
+.INTRO{
+	
+    top: 50%;
+    left: 90%;
+    transform: translate(70%, -60%);
+}
+#section1, #section2, #section3, #section4, #section5 {
+    position: relative;
+    z-index: -2; /* 设置其他区段的 z-index 值为更高 */
+}
+#section1{
+	background-color: white;
+}
+#section2{
+	background-color: rgb(202, 154, 207);
+}
+#section3{
+	background-color: rgb(177, 208, 151);
+}
+#section4{
+	background-color: rgb(166, 207, 217);
+}
+#section5{
+	background-color: rgb(222, 201, 137);
+}
+/* .poem h1,
+.poem h2,
+.poem p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.poem.reveal h1,
+.poem.reveal h2,
+.poem.reveal p {
+  opacity: 1;
+  transform: translateY(0);
+} */
